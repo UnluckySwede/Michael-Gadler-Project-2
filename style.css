@@ -1,0 +1,29 @@
+body {
+  width: unset;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+}
+
+.Box {
+  width: fit-content 20px;
+  height: fit-content 10px;
+  background-color: silver;
+  border-radius: 3px;
+  border-width: 2px;
+  border-color: black;
+  font-size: 100%;
+}
+
+button a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+button a {
+  text-decoration: 0;
+  color: black;
+  font-style: times;
+}
