@@ -27,3 +27,42 @@ button a {
   color: black;
   font-style: times;
 }
+
+.btn {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.btn:focus {
+  outline-style: none;
+}
+
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.add-profile {
+  background-color: white;
+  border: 2px solid black;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+}

@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Släktträd</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <button class="Box"><a href="Yes.html">yes</a></button>
+    <header>
+      <div>
+        <button class="btn">Dark</button>
+      </div>
+    </header>
+    <main>
+      <form class="add-profile">
+        <label> Name: <input type="text" id="profile_name" /> </label>
+        <label> Birthdate: <input type="date" id="profile_date" /> </label>
+        <label>
+          <input type="checkbox" id="profile-alive" /> This person is still
+          alive
+        </label>
+        <label> Death: <input type="date" id="profile-death" /> </label>
+        <button>Create person</button>
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>
