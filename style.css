@@ -1,7 +1,7 @@
 body {
   width: unset;
   height: 100%;
-  background-color: gray;
+  background-color: var(--bg);
   display: flex;
   flex-flow: wrap row;
   justify-content: flex-start;
@@ -45,21 +45,21 @@ button a {
 }
 
 .light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-  --btnBg: var(--black);
-  --btnFontColor: var(--white);
+  --bg: white;
+  --fontColor: black;
+  --btnBg: black;
+  --btnFontColor: white;
 }
 
 .dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--green);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
+  --bg: rgb(49, 45, 45);
+  --fontColor: lightgray;
+  --btnBg: rgba(255, 255, 255, 0.555);
+  --btnFontColor: black;
 }
 
 .add-profile {
-  background-color: white;
+  background-color: var(--bg);
   border: 2px solid black;
   padding: 1.5rem;
   margin: 1.5rem;
