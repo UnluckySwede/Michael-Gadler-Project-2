@@ -29,6 +29,7 @@ function addProfile(event) {
     living: true,
     death: 2020,
   };
+
   profiles.push(newPerson);
   console.table(profiles);
 }
