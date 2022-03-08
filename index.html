@@ -16,18 +16,32 @@
     </header>
     <main>
       <form class="add-profile">
-        <label> Name: <input type="text" id="profile_name" /> </label>
-        <label> Birthdate: <input type="date" id="profile_date" /> </label>
         <label>
-          <input type="checkbox" id="profile_alive" /> This person is still
-          alive
+          First Name:
+          <input class="first-name-input" type="text" id="first-profile_name" />
         </label>
-        <label> Death: <input type="date" id="profile_death" /> </label>
+        <label>
+          Last Name:
+          <input class="last-name-input" type="text" id="last-profile_name" />
+        </label>
+        <label>
+          Birthdate:
+          <input class="birthdate-input" type="date" id="profile_date" />
+        </label>
+        <label>
+          <input class="alive-input" type="checkbox" id="profile_alive" /> This
+          person is still alive
+        </label>
+        <label>
+          Death:
+          <input class="deathdate-input" type="date" id="profile_death" />
+        </label>
         <button>Create person</button>
       </form>
-      <form id="frm1">
+      <form profiles>
         First name: <input type="text" name="fname" /><br />
-        Last name: <input type="text" name="lname" /><br /><br />
+        Last name:
+        <input class="last-name-input" type="text" name="lname" /><br /><br />
         <input type="button" onclick="addProfile(event)" value="Submit" />
       </form>
 

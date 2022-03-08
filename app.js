@@ -24,10 +24,11 @@ let profiles = [];
 function addProfile(event) {
   event.preventDefault();
   let newPerson = {
-    name: "Mikael",
-    birth: 2006,
-    living: true,
-    death: 2020,
+    name: document.querySelector(".first-name-input").value,
+    lastname: document.querySelector(".last-name-input").value,
+    birth: document.querySelector(".birthdate-input").value,
+    living: document.querySelector(".alive-input").checked,
+    death: document.querySelector(".deathdate-input").value,
   };
 
   profiles.push(newPerson);
