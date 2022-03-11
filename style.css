@@ -29,9 +29,6 @@ button a {
 }
 
 .btn {
-  position: absolute;
-  top: 500px;
-  left: 250px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -53,9 +50,12 @@ button a {
 
 .dark-theme {
   --bg: rgb(49, 45, 45);
-  --fontColor: lightgray;
-  --btnBg: rgba(255, 255, 255, 0.555);
+  --fontColor: rgb(238, 226, 226);
+  --btnBg: rgba(255, 255, 255, 0.822);
   --btnFontColor: black;
+}
+label {
+  color: var(--btnBg);
 }
 
 .add-profile {

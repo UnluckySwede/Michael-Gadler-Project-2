@@ -6,8 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yes</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
-  <body>
-    <button class="Box"><a href="index.html">yes</a></button>
+  <body class="light-theme">
+    <header>
+      <div>
+        <button class="btn">Dark</button>
+        <button class="Box" type="submit">
+          <a href="index.html">yes</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <form class="add-profile">
+        <label>
+          First Name:
+          <input
+            required
+            class="first-name-input"
+            type="text"
+            id="first-profile_name"
+          />
+        </label>
+        <label>
+          Last Name:
+          <input class="last-name-input" type="text" id="last-profile_name" />
+        </label>
+        <label>
+          Birthdate:
+          <input class="birthdate-input" type="date" id="profile_date" />
+        </label>
+        <label>
+          <input class="alive-input" type="checkbox" id="profile_alive" />
+          This person is still alive
+        </label>
+        <label>
+          Death:
+          <input class="deathdate-input" type="date" id="profile_death" />
+        </label>
+        <button type="submit">Create person</button>
+      </form>
+    </main>
   </body>
 </html>

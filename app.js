@@ -21,6 +21,9 @@ switcher.addEventListener("click", function () {
 
 let profiles = [];
 
+localStorage.setItem("dark-theme", "true");
+localStorage.getItem("dark-theme");
+
 function addProfile(event) {
   event.preventDefault();
   let newPerson = {
