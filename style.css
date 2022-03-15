@@ -2,14 +2,12 @@ body {
   width: unset;
   height: 100%;
   background-color: var(--bg);
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: flex-start;
+  display: grid;
 }
 
 .Box {
-  width: fit-content 20px;
-  height: fit-content 10px;
+  width: fit-content;
+  height: fit-content;
   background-color: silver;
   border-radius: 3px;
   border-width: 2px;
@@ -29,8 +27,8 @@ button a {
 }
 
 .btn {
-  height: 50px;
-  width: 50px;
+  height: fit-content;
+  width: fit-content;
   border-radius: 50%;
   border: none;
   color: var(--btnFontColor);
