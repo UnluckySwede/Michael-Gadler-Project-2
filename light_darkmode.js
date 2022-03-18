@@ -1,20 +1,18 @@
 "use strict";
 
-localStorage;
-localStorage.setItem("theme", false);
 const switcher = document.querySelector(".btn");
 
 switcher.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme");
   document.body.classList.toggle("light-theme");
 
-  var className = localStorage.getItem("theme");
-  if (className == false) {
+  var className = document.body.className;
+  if (className == "light-theme") {
     this.textContent = "Dark";
-    var classname = true;
+    className = "dark-theme";
   } else {
     this.textContent = "Light";
-    var classname = false;
+    className = "light-theme";
   }
 
   console.log("current class name: " + className);
